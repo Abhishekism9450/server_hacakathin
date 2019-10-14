@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\api\\api.csproj": {}
+    "C:\\Users\\cgi\\Desktop\\server_hacakathin\\api.csproj": {}
   },
   "projects": {
-    "D:\\api\\api.csproj": {
+    "C:\\Users\\cgi\\Desktop\\server_hacakathin\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\api\\api.csproj",
+        "projectUniqueName": "C:\\Users\\cgi\\Desktop\\server_hacakathin\\api.csproj",
         "projectName": "api",
-        "projectPath": "D:\\api\\api.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\api\\obj\\",
+        "projectPath": "C:\\Users\\cgi\\Desktop\\server_hacakathin\\api.csproj",
+        "packagesPath": "C:\\Users\\cgi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cgi\\Desktop\\server_hacakathin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cgi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

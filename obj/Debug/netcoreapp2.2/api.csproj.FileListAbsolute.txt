@@ -42,3 +42,17 @@ D:\api\obj\Debug\netcoreapp2.2\api.RazorTargetAssemblyInfo.cache
 D:\api\obj\Debug\netcoreapp2.2\api.dll
 D:\api\obj\Debug\netcoreapp2.2\api.pdb
 D:\api\obj\Debug\netcoreapp2.2\api.csproj.CoreCompileInputs.cache
+C:\Users\cgi\Desktop\server_hacakathin\bin\Debug\netcoreapp2.2\api.deps.json
+C:\Users\cgi\Desktop\server_hacakathin\bin\Debug\netcoreapp2.2\api.runtimeconfig.json
+C:\Users\cgi\Desktop\server_hacakathin\bin\Debug\netcoreapp2.2\api.runtimeconfig.dev.json
+C:\Users\cgi\Desktop\server_hacakathin\bin\Debug\netcoreapp2.2\api.dll
+C:\Users\cgi\Desktop\server_hacakathin\bin\Debug\netcoreapp2.2\api.pdb
+C:\Users\cgi\Desktop\server_hacakathin\obj\Debug\netcoreapp2.2\api.csprojAssemblyReference.cache
+C:\Users\cgi\Desktop\server_hacakathin\obj\Debug\netcoreapp2.2\api.csproj.CoreCompileInputs.cache
+C:\Users\cgi\Desktop\server_hacakathin\obj\Debug\netcoreapp2.2\api.RazorAssemblyInfo.cache
+C:\Users\cgi\Desktop\server_hacakathin\obj\Debug\netcoreapp2.2\api.RazorAssemblyInfo.cs
+C:\Users\cgi\Desktop\server_hacakathin\obj\Debug\netcoreapp2.2\api.AssemblyInfoInputs.cache
+C:\Users\cgi\Desktop\server_hacakathin\obj\Debug\netcoreapp2.2\api.AssemblyInfo.cs
+C:\Users\cgi\Desktop\server_hacakathin\obj\Debug\netcoreapp2.2\api.RazorTargetAssemblyInfo.cache
+C:\Users\cgi\Desktop\server_hacakathin\obj\Debug\netcoreapp2.2\api.dll
+C:\Users\cgi\Desktop\server_hacakathin\obj\Debug\netcoreapp2.2\api.pdb

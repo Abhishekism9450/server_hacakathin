@@ -53,7 +53,8 @@ namespace api
 
             services.AddSingleton<IChatDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<ChatDatabaseSettings>>().Value);
-            services.AddSingleton<ChatService>();
+            services.AddSingleton<ChatService>()
+                    .AddSingleton<ApiService>();
             services.AddMvc().AddJsonOptions(options => options.UseMemberCasing())
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddSwaggerGen(c =>
