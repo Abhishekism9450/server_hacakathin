@@ -40,5 +40,11 @@ namespace api.Services
         public void Remove(string id) =>
             _apiValue.DeleteOne(book => book.Id == id);
 
+
+        public ChatDetails GetByName(string Uname)
+        {
+            return _apiValue.Find(name => name.Uname == Uname).FirstOrDefault();
+        }
+
     }
 }

@@ -28,11 +28,39 @@ namespace api.Controllers
         public ActionResult<List<ChatDetails>> Get() =>
           _eventService.Get();
 
-
-        [HttpGet("{id:length(24)}", Name = "GetEventsByApi")]
-        public ActionResult<string> Get(string id)
+        string query = "repo";
+        string name__ = "MyHackathonProj";
+        [HttpGet("{Uname}", Name = "GetEventsByApi")]
+        public ActionResult<string> Get(string Uname)
         {
-            string url = "https://api.wit.ai/message?q='repo' "; // sample url
+            var userdetail = _eventService.GetByName(Uname);
+            Console.WriteLine(userdetail.Message);
+            var messageStr = userdetail.Message;
+            string[] words = messageStr.Split(" ");
+            string issue = null;
+            string repoName = null;
+            string uname = null;
+            foreach (string word in words)
+            {
+                if (word.Contains("_repo"))
+                {
+                    repoName = word.Substring(0, word.Length - 5);
+                    Console.WriteLine(repoName);
+
+                }
+                if (word.Contains("_issue"))
+                {
+                    issue = word.Substring(0, word.Length - 6);
+                    Console.WriteLine(issue);
+                }
+                if (word.Contains("_uname"))
+                {
+                    repoName = word.Substring(0, word.Length - 6);
+                    Console.WriteLine(uname);
+                }
+            }
+
+            string url = "https://api.wit.ai/message?q='query' "; // sample url
             string a = "Bearer " + "Q4RKYGRYITQSLDZGPJ4B4VCRMOKTTHKE";
             using (HttpClient client = new HttpClient())
             {
@@ -56,8 +84,8 @@ namespace api.Controllers
                         request.AddHeader("Cache-Control", "no-cache");
                         request.AddHeader("Accept", "/application/vnd.github.shadow-cat-preview+json");
                         request.AddHeader("User-Agent", "PostmanRuntime/7.17.1");
-                        request.AddHeader("Authorization", "Bearer 1fa56381fc60c7ca43a0fa28311f1bfd910b5815");
-                        request.AddJsonBody(new { name = "MyBoy" });
+                        request.AddHeader("Authorization", "Bearer 82c9a5da4cf60b95377e39e9162be247e090a606");
+                        request.AddJsonBody(new { name = name__ });
                         IRestResponse response = client_.Execute(request);
                         return response.Content;
                         break;
@@ -74,7 +102,7 @@ namespace api.Controllers
                         requestss.AddHeader("Accept", "/application/vnd.github.shadow-cat-preview+json");
                         requestss.AddHeader("User-Agent", "PostmanRuntime/7.17.1");
                         requestss.AddHeader("Authorization", "Bearer 282de0d755e499919a08d835f45cb742b32fc10b");
-                        requestss.AddJsonBody(new { name = "BotExample" });
+                        // requestss.AddJsonBody(new { name = "BotExample" });
                         requestss.AddJsonBody(new { title = "foo" }); //for issue it is required.
 
                         IRestResponse responsess = clientss.Execute(requestss);
@@ -107,7 +135,8 @@ namespace api.Controllers
             return "Okay";
 
         }
-        [HttpPost]
+        [HttpPost("{Uname}", Name = "GetEventsByApi")]
+
         public ActionResult<ChatDetails> Create(ChatDetails events)
         {
             _eventService.Create(events);
